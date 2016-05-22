@@ -1,0 +1,18 @@
+<resources>
+
+    <style name="AppTheme" parent="android:Theme.Holo.Light">
+    </style>
+
+    <style name="BasicComponent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/component_height</item>
+    </style>
+
+    <style name="BlueButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/component_height</item>
+        <item name="android:background">@drawable/rectangle_blue</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+</resources>

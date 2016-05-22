@@ -24,7 +24,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true">
-        <activity android:name=".MainActivity">
+        <activity android:name=".ui.activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -43,10 +43,12 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="cn.jpush.android.intent.DaemonService"/>
+
                 <category android:name="com.jpush.jmessagefeedbackdemo"/>
             </intent-filter>
         </service>
         <!-- end -->
+
 
         <!-- Required Push SDK module -->
         <service
@@ -92,11 +94,11 @@
         <service
             android:name="cn.jpush.android.service.DownloadService"
             android:enabled="true"
-            android:exported="false"
-            />
+            android:exported="false"/>
 
         <receiver android:name="cn.jpush.android.service.AlarmReceiver"/>
         <!-- end -->
+
 
         <!-- IM Required SDK module -->
         <receiver
@@ -115,11 +117,17 @@
         <meta-data
             android:name="JPUSH_CHANNEL"
             android:value="developer-default"/>
-
         <meta-data
             android:name="JPUSH_APPKEY"
             android:value="您的 APPKEY"/>
 
+        <activity android:name=".ui.activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

@@ -1,3 +1,157 @@
 <resources>
     <string name="app_name">JMessageFeedbackDemo</string>
+
+    <string name="password">密 码</string>
+    <string name="username">用户名</string>
+    <string name="login">登 录</string>
+    <string name="register">注 册</string>
+
+    <string name="username_not_null_toast">用户名不能为空</string>
+    <string name="nickname_not_null_toast">昵称不能为空</string>
+    <string name="password_not_null_toast">密码不能为空</string>
+    <string name="password_length_illegal">密码长度要在4–128个字节之间</string>
+    <string name="password_same_to_previous">不能和原密码相同，请输入新密码</string>
+
+    <!-- JMessage error code begin -->
+    <string name="error_871101">请求参数不合法</string>
+    <string name="error_871102">请求失败，请检查网络</string>
+    <string name="error_871103">服务器内部错误</string>
+    <string name="error_871104">服务器内部错误</string>
+
+    <string name="error_871201">响应超时</string>
+
+    <string name="error_871300">API 调用发起者尚未登录</string>
+    <string name="error_871301">API 调用传入参数不合法</string>
+    <string name="error_871302">发送的消息体过大，整个消息体大小不能超过 4K</string>
+    <string name="error_871303">用户名不合法</string>
+    <string name="error_871304">密码不合法</string>
+    <string name="error_871305">名称不合法（包括 nickName, groupName, noteName）</string>
+    <string name="error_871306">其他输入不合法</string>
+    <string name="error_871307">添加或移除群成员时，传入的成员列表中有用户不存在</string>
+    <string name="error_871308">SDK 尚未初始化</string>
+    <string name="error_871309">消息中包含的文件不存在</string>
+    <string name="error_871310">网络连接已断开，请检查网络</string>
+    <string name="error_871311">用户未设定头像，下载头像失败</string>
+    <string name="error_871312">创建 ImageContent 失败</string>
+    <string name="error_871313">消息解析出错，协议版本号不匹配</string>
+    <string name="error_871314">消息解析出错，缺少关键参数</string>
+    <string name="error_871315">消息解析错误</string>
+
+    <string name="error_871402">文件上传失败</string>
+    <string name="error_871403">文件上传失败</string>
+    <string name="error_871404">文件下载失败</string>
+
+    <string name="error_871501">AppKey 与包名不匹配或 token 无效</string>
+    <string name="error_871502">
+        AppKey 无效，请检查 AndroidManifest.xml 里的 AppKey 配置，其必须与极光控制台的一致
+    </string>
+    <string name="error_871503">
+        AppKey 与平台不匹配。可能在极光控制台上，为配置此 AppKey 支持 Android 平台。
+    </string>
+    <string name="error_871504">
+        Push 注册未完成，请稍后重试。如果持续出现此问题，可能是 JPush 配置不正确。
+    </string>
+
+    <string name="error_898000">内部错误</string>
+    <string name="error_898001">用户已存在</string>
+    <string name="error_898002">用户不存在</string>
+    <string name="error_898003">请求参数不合法</string>
+    <string name="error_898004">更改密码操作中用户密码错误</string>
+    <string name="error_898006">Gid 不存在</string>
+    <string name="error_898007">校验信息为空</string>
+    <string name="error_898008">校验失败</string>
+    <string name="error_898009">AppKey 不存在</string>
+    <string name="error_898010">API 请求 token 过期。正常情况下 SDK 会自动重新获取 token</string>
+
+    <string name="error_898030">系统繁忙，请稍后重试</string>
+
+    <string name="error_899000">系统内部错误</string>
+    <string name="error_899001">用户已存在</string>
+    <string name="error_899002">用户不存在</string>
+    <string name="error_899003">
+        参数错误，Request Body 参数不符合要求；resend 值不符合要求；用户名或密码不合法；群组 Gid 不合法
+    </string>
+    <string name="error_899007">校验信息为空</string>
+    <string name="error_899008">校验失败</string>
+    <string name="error_899009">AppKey 不存在</string>
+    <string name="error_899011">重复添加群成员</string>
+    <string name="error_899012">没有足够位置添加此次请求的成员</string>
+    <string name="error_899013">注册列表大于 500，批量注册最大长度为 500</string>
+    <string name="error_899014">添加操作成功，remove 操作有用户不在讨论组中，remove 操作失败</string>
+    <string name="error_899015">用户加入讨论组达上限</string>
+    <string name="error_899016">用户没有权限发送消息</string>
+    <string name="error_899017">用户已被加入黑名单</string>
+    <string name="error_899018">管理员不能被加入黑名单</string>
+    <string name="error_899019">删除目标黑名单用户并不在黑名单中</string>
+    <string name="error_899030">系统繁忙，请稍后重试</string>
+
+    <string name="error_800003">AppKey 未注册</string>
+    <string name="error_800005">用户 ID 未注册（AppKey 无该 UID）</string>
+    <string name="error_800006">用户 ID 不存在（数据库中无该 UID）</string>
+    <string name="error_800009">服务器系统错误</string>
+    <string name="error_800012">发起的用户处于登出状态，账号注册以后从未登录过，需要先登录</string>
+    <string name="error_800013">发起的用户处于登出状态，请求的用户已经登出，需要先登录</string>
+    <string name="error_800014">发起的用户 AppKey 与目标不匹配</string>
+    <string name="error_800016">发起的用户设备不匹配，当前请求的设备与上次登录的设备不匹配导致，需要先登录</string>
+
+    <string name="error_801003">登录的用户名未注册，登录失败</string>
+    <string name="error_801004">登录的用户密码错误，登录失败</string>
+    <string name="error_801005">登录的用户设备有误，登录失败</string>
+
+    <string name="error_803001">发送消息失败，状态存储异常</string>
+    <string name="error_803002">发送消息失败，系统网络异常</string>
+    <string name="error_803003">发送消息失败，目标用户未注册或不存在</string>
+    <string name="error_803004">发送消息失败，目标讨论组不存在</string>
+    <string name="error_803005">发送消息失败，发起者不在目标讨论组中</string>
+    <string name="error_803006">发送消息失败，发起者权限不够或类别不匹配</string>
+    <string name="error_803007">发送消息失败，消息长度超过限制</string>
+    <string name="error_803008">发送消息失败，发送者已被接受者拉入黑名单，仅限单聊</string>
+    <string name="error_803010">发送消息失败，发送频率超过系统限制，无法发送，客户端限制每分钟 60 条</string>
+
+    <string name="error_808002">用户无创建讨论组权限，创建讨论组失败</string>
+    <string name="error_808003">用户拥有的讨论组数量已达上限，无法再创建</string>
+    <string name="error_808004">讨论组名称长度超出上限，创建讨论组失败</string>
+    <string name="error_808005">讨论组描述长度超出上限，创建讨论组失败</string>
+
+    <string name="error_809001">用户退出讨论组时，讨论组 ID 不存在，退出讨论组失败</string>
+    <string name="error_809002">用户退出讨论组时，用户不在讨论组中，退出讨论组失败</string>
+
+    <string name="error_810001">用户添加成员到讨论组时，讨论组 ID 不存在，添加成员失败</string>
+    <string name="error_810002">用户添加成员到讨论组时，添加的成员列表为空，添加成员失败</string>
+    <string name="error_810003">用户添加成员到讨论组时，用户不在该讨论组中，添加成员失败</string>
+    <string name="error_810004">用户添加成员到讨论组时，用户没有往讨论组中添加成员的权限，添加成员失败</string>
+    <string name="error_810005">用户添加成员到讨论组时，添加的成员列表中有成员未注册，添加成员失败</string>
+    <string name="error_810006">用户添加成员到讨论组时，添加的成员列表中有成员该用户没有权限进行添加，添加成员失败</string>
+    <string name="error_810007">用户添加成员到讨论组时，添加的成员列表中有成员重复添加，添加成员失败</string>
+    <string name="error_810008">用户添加成员到讨论组时，添加的成员数量超出讨论组拥有的最大成员数上限，添加成员失败</string>
+    <string name="error_810009">用户添加成员到讨论组时，添加的成员列表中有成员拥有的讨论组数量已达上限，添加成员失败</string>
+
+    <string name="error_811001">用户删除讨论组成员时，讨论组ID不存在，删除成员失败</string>
+    <string name="error_811002">用户删除讨论组成员时，删除的成员列表为空，删除成员失败</string>
+    <string name="error_811003">用户删除讨论组成员时，用户不在该讨论组中，删除成员失败</string>
+    <string name="error_811004">用户删除讨论组成员时，用户没有删除讨论组中成员的权限，删除成员失败</string>
+    <string name="error_811005">用户删除讨论组成员时，删除的成员列表中有成员未注册，删除成员失败</string>
+    <string name="error_811006">用户删除讨论组成员时，删除的成员列表中有成员该用户没有权限进行删除，删除成员失败</string>
+    <string name="error_811007">用户删除讨论组成员时，删除的成员列表中有成员重复删除，删除成员失败</string>
+    <string name="error_811008">用户删除讨论组成员时，删除的成员列表中有成员不在该讨论组中，删除成员失败</string>
+
+    <string name="error_812001">用户修改讨论组信息时，讨论组ID不存在，修改讨论组信息失败</string>
+    <string name="error_812002">用户修改讨论组信息时，用户不在该讨论组中，修改讨论组信息失败</string>
+    <string name="error_812003">用户修改讨论组信息时，讨论组名超出长度上限，修改讨论组信息失败</string>
+    <string name="error_812004">用户修改讨论组信息时，讨论组描述超出上限，修改讨论组信息失败</string>
+
+    <string name="error_818001">用户添加黑名单时，成员列表为空，添加失败</string>
+    <string name="error_818002">用户添加黑名单时，成员列表中有成员不存在，添加失败</string>
+    <string name="error_818003">用户添加黑名单时，成员列表中有成员不能被添加，添加失败</string>
+
+    <string name="error_819001">用户移除好友出黑名单时，成员列表为空，操作失败</string>
+    <string name="cancel">取消</string>
+    <string name="resend_message_hint">重新发送消息？</string>
+    <string name="resend_commit">重发</string>
+    <string name="send">发送</string>
+    <string name="picture">图片</string>
+    <string name="take_photo">拍照</string>
+    <string name="video">视频</string>
+    <!-- JMessage error code end -->
+
 </resources>
